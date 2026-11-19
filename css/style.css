@@ -1,0 +1,34 @@
+/* MoneyBook 共用樣式：以 Bootstrap 內建類別為主，這裡只放必要的自訂樣式 */
+
+body {
+  min-height: 100vh;
+}
+
+/* 讓 flex 子元素內的長文字可以換行，不會撐破版面 */
+.min-w-0 {
+  min-width: 0;
+}
+
+/* 統計頁圖表容器：Chart.js 需要有明確高度才能隨寬度自適應 */
+.chart-box {
+  height: 240px;
+  max-width: 320px;
+}
+
+.chart-box-wide {
+  height: 280px;
+}
+
+/* 統計頁表格中的分類顏色標記 */
+.color-swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+/* 導覽列目前所在頁面以粗體標示 */
+.navbar .nav-link.active {
+  font-weight: 600;
+}
